@@ -3,12 +3,24 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 
 
   <!-- YOUR HTML HERE -->
-
+  <div class="container">
+    <img id="inn" src="images/inn.jpg" alt="inn" onclick="rest(hero)">
+    <img id="bat" src="images/bat.png" alt="bat" onclick="pickUpItem(hero,{type:'bat',damage:1})" />
+    <img id="dagger" src="images/dagger.png" alt="dagger" onclick="pickUpItem(hero,{type:'dagger',damage:2})" />
+    <img id="sword" src="images/katana.png" alt="sword" onclick="pickUpItem(hero,{type:'sword',damage:5}) " />
+    <a href=# onclick ="equipWeapon(hero)"><img id="bag" src="images/bag.png" alt="bag"  /></a>
+  <div>
+    <div class="heroDsiplay">
+      <span id="heroName"></span><br>
+      <span id="heroHealth"></span><br>
+      <span id="heroWeapon"></span><br>
+    </div>
 
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
